@@ -117,72 +117,64 @@ const CSRAddCategory = () => {
         }}
         className="fade-in"
       >
-        <Typography variant="h6">Category Form</Typography>
+        <Typography variant="h6">Add New Category</Typography>
         <TextField
-          label="Name of the category"
+          label="Add Category Details"
           fullWidth
           value={categoryName}
           onChange={(e) => setCategoryName(e.target.value)}
           margin="normal"
         />
-        <input
-          type="file"
-          accept="image/*" // Accept image files only
-          id="cover-image-upload"
-          style={{ display: "none" }}
-          onChange={handleImageUpload}
-        />
-        <label htmlFor="cover-image-upload">
+        <p>Contact the Developer</p>
           <Button
             variant="contained"
             component="span"
             color="primary"
             style={{ backgroundColor: "#FFCF70", color: "black" }}
           >
-            Upload Cover Image
+            Send Message
           </Button>
-        </label>
 
-        <Typography variant="subtitle1">Questions:</Typography>
-        {questions.map((question, index) => (
-          <TextField
-            key={index}
-            label={`Question ${index + 1}`}
-            fullWidth
-            value={question}
-            onChange={(e) => handleQuestionChange(index, e.target.value)}
-            margin="normal"
-          />
-        ))}
-        <div
-          style={{
-            display: "inline-block",
-            marginRight: "10px",
-            marginLeft: "auto",
-          }}
-        >
-          <IconButton onClick={handleAddQuestion} color="primary">
-            <AddIcon />
-          </IconButton>
-          <Button
-            variant="contained"
-            color="primary"
-            style={{ backgroundColor: "#FFCF70", color: "black" }}
-          >
-            Add
-          </Button>
-        </div>
-        <div style={{ display: "inline-block" }}>
-          <Link to="/csrcategory">
-            <Button
-              variant="contained"
-              color="secondary"
-              style={{ backgroundColor: "#FFCF70", color: "black" }}
-            >
-              Discard
-            </Button>
-          </Link>
-        </div>
+        {/*<Typography variant="subtitle1">Questions:</Typography>*/}
+        {/*{questions.map((question, index) => (*/}
+        {/*  <TextField*/}
+        {/*    key={index}*/}
+        {/*    label={`Question ${index + 1}`}*/}
+        {/*    fullWidth*/}
+        {/*    value={question}*/}
+        {/*    onChange={(e) => handleQuestionChange(index, e.target.value)}*/}
+        {/*    margin="normal"*/}
+        {/*  />*/}
+        {/*))}*/}
+        {/*<div*/}
+        {/*  style={{*/}
+        {/*    display: "inline-block",*/}
+        {/*    marginRight: "10px",*/}
+        {/*    marginLeft: "auto",*/}
+        {/*  }}*/}
+        {/*>*/}
+        {/*  <IconButton onClick={handleAddQuestion} color="primary">*/}
+        {/*    <AddIcon />*/}
+        {/*  </IconButton>*/}
+        {/*  <Button*/}
+        {/*    variant="contained"*/}
+        {/*    color="primary"*/}
+        {/*    style={{ backgroundColor: "#FFCF70", color: "black" }}*/}
+        {/*  >*/}
+        {/*    Add*/}
+        {/*  </Button>*/}
+        {/*</div>*/}
+        {/*<div style={{ display: "inline-block" }}>*/}
+        {/*  <Link to="/csrcategory">*/}
+        {/*    <Button*/}
+        {/*      variant="contained"*/}
+        {/*      color="secondary"*/}
+        {/*      style={{ backgroundColor: "#FFCF70", color: "black" }}*/}
+        {/*    >*/}
+        {/*      Discard*/}
+        {/*    </Button>*/}
+        {/*  </Link>*/}
+        {/*</div>*/}
       </Paper>
     </div>
   );

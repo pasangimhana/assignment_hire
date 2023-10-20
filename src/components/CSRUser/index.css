@@ -489,6 +489,7 @@ ld img {
   .dash-nav-avatar {
     display: flex;
     width: 200px;
+    align-items: center;
     gap: 15px;
   }
 
@@ -585,6 +586,18 @@ ld img {
     color: rgb(225, 87, 87) !important;
     font-weight: 600 !important;
   }
+
+  .customer-row {
+    background-color: #FEEDC2;
+  }
+
+  .complaint-detail {
+    margin: 10px 0 10px 0;
+  }
+
+  .reply-section {
+    display: block;
+  }
 }
 
 .fade-in {
@@ -599,4 +612,37 @@ ld img {
   100% {
     opacity: 1;
   }
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup p {
+  margin-bottom: 10px;
+}
+
+.popup button {
+  margin-right: 10px;
+}
+
+.proofofservice{
+  display: flex;
+    flex-direction: row;
 }
